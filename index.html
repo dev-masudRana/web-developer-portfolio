@@ -4,39 +4,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Masud Rana">
+    <meta name="description" content="Building a Portfolio Website">
+    <meta name="keywords" content="portfolio, website">
     <title>Web Developer Portfolio</title>
+    <script src="https://kit.fontawesome.com/f91fd0dd4a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/">Ma<span>r</span>y</a></li>
-                <li><a href="/">Portfolio</a></li>
-                <li><a href="/">Blog</a></li>
-                <li><button>Hire Me</button></li>
-            </ul>
-        </nav>
-        <article>
-            <section>
-                <p>Hi, I am</p>
-                <h1>Mary Hardy</h1>
-                <p>
-                    Shot what able cold new see hold. Friendly as an betrayed formerly he. Morning because as to society
-                    behaved moments.
-                </p>
-                <button>Download</button><button>Contact</button>
-            </section>
-            <section>
-                <img src="images/hardy.png" alt="Profile Pic">
-            </section>
-        </article>
+    <header class="header">
+        <section>
+            <nav class="header__nav">
+                <ul class="header__nav--ul">
+                    <li class="name"><a href="/">Ma<span>r</span>y</a></li>
+                    <div>
+                        <li><a href="/">Portfolio</a></li>
+                        <li><a href="/">Blog</a></li>
+                        <li><button class="btn-primary btn-hire">Hire Me</button></li>
+                    </div>
+                </ul>
+            </nav>
+            <article>
+                <section class="header-intro">
+                    <p class="hi">Hi, I am</p>
+                    <h1>Mary Hardy</h1>
+                    <p class="description">
+                        Shot what able cold new see hold. Friendly as an betrayed formerly he. Morning because as to
+                        society
+                        behaved moments.
+                    </p>
+                    <button class="btn-download"><i class="fa-solid fa-download"></i> Download CV</button> <button
+                        class="btn-contact"><i class="fa-solid fa-phone"></i> Contact</button>
+                </section>
+                <section class="header-img">
+                    <img src="images/hardy.png" alt="Profile Pic" width="584" height="676">
+                </section>
+            </article>
+        </section>
     </header>
     <main>
-
+        <article class="about">
+            <section>
+                <h2>About Me</h2>
+                <p>
+                    I, m a designer & developer with a passion for web design. I enjoy developing simple, clean and
+                    slick
+                    websites that provide real value to the end user. Thousands of clients have procured exceptional
+                    resulfs
+                    while working with me. Delivering work within time and budget which meets clients requirements in
+                    our
+                    mata.
+                </p>
+                <div class="flex">
+                    <div>
+                        <div class="td">Name:</div>
+                        <div class="th">Mary Hardy</div>
+                    </div>
+                    <div>
+                        <div class="td">Email:</div>
+                        <div class="th">info@gmail.com</div>
+                    </div>
+                    <div>
+                        <div class="td">Date of Birth:</div>
+                        <div class="th">11 November 1987</div>
+                    </div>
+                    <div>
+                        <div class="td">From:</div>
+                        <div class="th">Los Angeles, USA</div>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <article class="skill">
+            <h2>What I do</h2>
+            <p>
+                I have more than 10 years experience building software for clients all over the world. Below is a quick
+                overview of my main technical skill sets and technologies i use. Want to find out more about my
+                experience? Check out my online resume and project portfolio.
+            </p>
+            <section class="card-container">
+                <div class="card">
+                    <img src="images/icons/js.png" alt="JavaScript" width="44" height="44">
+                    <h3>Vanilla JavaScript</h3>
+                    <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5
+                        free icons available. Aenean commodo ligula eget dolor.</p>
+                </div>
+                <div class="card">
+                    <img src="images/icons/react.png" alt="React" width="44" height="44">
+                    <h3>React</h3>
+                    <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5
+                        free icons available. Aenean commodo ligula eget dolor.</p>
+                </div>
+                <div class="card">
+                    <img src="images/icons/nodejs.png" alt="Node.js" width="44" height="44">
+                    <h3>Node.js</h3>
+                    <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5
+                        free icons available. Aenean commodo ligula eget dolor.</p>
+                </div>
+                <div class="card">
+                    <img src="images/icons/mongo.png" alt="MongoDB" width="44" height="44">
+                    <h3>MongoDB</h3>
+                    <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5
+                        free icons available. Aenean commodo ligula eget dolor.</p>
+                </div>
+            </section>
+        </article>
+        <article class="resume">
+            <h2>A summary of My Resume</h2>
+            <div class="quality-container">
+                <div>
+                    <h3>My Education</h3>
+                    <div class="education">
+                        <h4>Master in Computer Engineering</h4>
+                        <h5>Harvard University / 2015 - 2017</h5>
+                        <p>
+                            List skill/technologies here. You can change the icon above
+                            to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
+                        </p>
+                    </div>
+                    <div class="education">
+                        <h4>Master in Computer Engineering</h4>
+                        <h5>Harvard University / 2015 - 2017</h5>
+                        <p>
+                            List skill/technologies here. You can change the icon above
+                            to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
+                        </p>
+                    </div>
+                    <div class="education">
+                        <h4>Master in Computer Engineering</h4>
+                        <h5>Harvard University / 2015 - 2017</h5>
+                        <p>
+                            List skill/technologies here. You can change the icon above
+                            to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h3>My Experience</h3>
+                    <div class="experience">
+                        <h4>Sr. Font End Developer</h4>
+                        <h5>Apple Inc / 2020 - Current</h5>
+                        <p>
+                            List skill/technologies here. You can change the icon above
+                            to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
+                        </p>
+                    </div>
+                    <div class="experience">
+                        <h4>Jr. Font End Developer</h4>
+                        <h5>Dribbble Inc / 2018 - 2022</h5>
+                        <p>
+                            List skill/technologies here. You can change the icon above
+                            to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
+                        </p>
+                    </div>
+                    <div class="experience">
+                        <h4>HTML Developer</h4>
+                        <h5>Adobe Inc / 2017 - 2018</h5>
+                        <p>
+                            List skill/technologies here. You can change the icon above
+                            to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <button><i class="fa-solid fa-download"></i> Download CV</button>
+            </section>
+        </article>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <article>
+            <section>
+                <h2>Lets Connect</h2>
+                <p>
+                    Please fill out the form on this section to contact with me or call between 9:00 A.M and 8.00 P.M
+                    ET, Monday through Friday.
+                </p>
+                <a href="/"><img src="images/icons/facebook.png" alt="Facebook link" width="24" height="24"></a>
+                <a href="/"><img src="images/icons/twitter.png" alt="Twitter link" width="24" height="24"></a>
+                <a href="/"><img src="images/icons/insta.png" alt="Instagram link" width="24" height="24"></a>
+            </section>
+            <section>
+                <h2>Let's Message me</h2>
+                <input type="text" name="name" id="name" placeholder="Your name"> <br>
+                <input type="email" name="email" id="email" placeholder="Your email"> <br>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            </section>
+        </article>
     </footer>
 </body>
 
